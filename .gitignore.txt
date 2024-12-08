@@ -1,0 +1,11 @@
+# Ignorar carpetas de compilación
+bin/
+obj/
+
+# Ignorar archivos de configuración locales
+appsettings.Development.json
+
+# Ignorar archivos temporales
+.vs/
+*.user
+*.suo
