@@ -86,4 +86,4 @@ C:\Users\Charlie\source\repos\ApiEmpleado\ApiEmpleado\obj\Debug\net6.0\refint\Ap
 C:\Users\Charlie\source\repos\ApiEmpleado\ApiEmpleado\obj\Debug\net6.0\ApiEmpleado.pdb
 C:\Users\Charlie\source\repos\ApiEmpleado\ApiEmpleado\obj\Debug\net6.0\ApiEmpleado.genruntimeconfig.cache
 C:\Users\Charlie\source\repos\ApiEmpleado\ApiEmpleado\obj\Debug\net6.0\ref\ApiEmpleado.dll
-C:\Users\Charlie\source\repos\ApiEmpleado\ApiEmpleado\obj\Debug\net6.0\ApiEmple.462B516F.Up2Date
+C:\Users\Charlie\source\repos\ApiEmpleado\ApiEmpleado\obj\Debug\net6.0\ApiEmpleado.csproj.CopyComplete
