@@ -87,3 +87,7 @@ C:\Users\Charlie\source\repos\ApiEmpleado\ApiEmpleado\obj\Debug\net6.0\ApiEmplea
 C:\Users\Charlie\source\repos\ApiEmpleado\ApiEmpleado\obj\Debug\net6.0\ApiEmpleado.genruntimeconfig.cache
 C:\Users\Charlie\source\repos\ApiEmpleado\ApiEmpleado\obj\Debug\net6.0\ref\ApiEmpleado.dll
 C:\Users\Charlie\source\repos\ApiEmpleado\ApiEmpleado\obj\Debug\net6.0\ApiEmpleado.csproj.CopyComplete
+C:\Users\Charlie\source\repos\ApiEmpleado\ApiEmpleado\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Charlie\source\repos\ApiEmpleado\ApiEmpleado\bin\Debug\net6.0\Scrutor.dll
+C:\Users\Charlie\source\repos\ApiEmpleado\ApiEmpleado\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\Charlie\source\repos\ApiEmpleado\ApiEmpleado\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll

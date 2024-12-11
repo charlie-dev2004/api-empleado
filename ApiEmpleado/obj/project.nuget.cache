@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XxFu58exFCsTptrFaFsbrI+/oc1pzFngQ6zZbdkV56Rk8S5K0Cl6e4OJCYavhvE/hHZ4UtTgdwqiOppUWLsQFA==",
+  "dgSpecHash": "eqjRBAijdP4d/32meZR3LX/KGFmXJtrx1Ltx0eAtR8b8yF1r1i2Rmay6JLTQDNwIRI+jnlQHpwTvUn1MyfDb9w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Charlie\\source\\repos\\ApiEmpleado\\ApiEmpleado\\ApiEmpleado.csproj",
   "expectedPackageFiles": [
@@ -44,7 +44,11 @@
     "C:\\Users\\Charlie\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\Charlie\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Charlie\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Charlie\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Charlie\\.nuget\\packages\\scrutor\\3.0.1\\scrutor.3.0.1.nupkg.sha512",
     "C:\\Users\\Charlie\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\Charlie\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\5.0.0\\swashbuckle.aspnetcore.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\Charlie\\.nuget\\packages\\swashbuckle.aspnetcore.filters\\6.1.0\\swashbuckle.aspnetcore.filters.6.1.0.nupkg.sha512",
     "C:\\Users\\Charlie\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\Charlie\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "C:\\Users\\Charlie\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",

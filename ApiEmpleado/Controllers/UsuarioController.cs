@@ -1,0 +1,41 @@
+﻿using ApiEmpleado.DTOs;
+using ApiEmpleado.Interfaces;
+using ApiEmpleado.Models;
+using Microsoft.AspNetCore.Mvc;
+
+namespace ApiEmpleado.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UsuarioController : Controller
+    {
+        private readonly IUsuarioService _usuarioService;
+        public UsuarioController(IUsuarioService usuarioService)
+        {
+            _usuarioService = usuarioService;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Register(UsuarioDto usuarioDto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var usuario = new Usuario
+            {
+                UserName = usuarioDto.UserName,
+                Password = usuarioDto.Password
+            };
+
+            return Ok(await _usuarioService.Register(usuario));
+        }
+
+        [HttpPost("Login")]
+        public async Task<IActionResult> Login(UsuarioDto usuario)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            return Ok(await _usuarioService.Login(usuario.UserName, usuario.Password));
+        }
+    }
+}

@@ -2,9 +2,11 @@
 using ApiEmpleado.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using ApiEmpleado.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ApiEmpleado.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class EmpleadoController : Controller
