@@ -1,6 +1,7 @@
 ﻿using ApiEmpleado.DTOs;
 using ApiEmpleado.Interfaces;
 using ApiEmpleado.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiEmpleado.Controllers
@@ -15,6 +16,7 @@ namespace ApiEmpleado.Controllers
             _usuarioService = usuarioService;
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> Register(UsuarioDto usuarioDto)
         {

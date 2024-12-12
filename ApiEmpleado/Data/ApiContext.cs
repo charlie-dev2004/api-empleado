@@ -9,5 +9,6 @@ namespace ApiEmpleado.Data
 
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Empleado> Empleados { get; set; }
+        public DbSet<Departamento> Departamentos { get; set; }
     }
 }

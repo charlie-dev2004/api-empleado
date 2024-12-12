@@ -21,5 +21,10 @@ namespace ApiEmpleado.Models
         public int Edad { get; set; }
         public int Telefono { get; set; }
 
+        [ForeignKey("Departamento")]
+        public int IdDepartamento { get; set; }
+
+        public Departamento Departamento { get; set; } 
+
     }
 }
