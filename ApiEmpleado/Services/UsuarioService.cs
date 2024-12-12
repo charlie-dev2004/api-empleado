@@ -1,6 +1,7 @@
 ﻿using ApiEmpleado.Data;
 using ApiEmpleado.Interfaces;
 using ApiEmpleado.Models;
+using BCrypt.Net;
 using Microsoft.AspNetCore.Authorization.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -53,14 +54,22 @@ namespace ApiEmpleado.Services
 
             var usuario = await _context.Usuarios.FirstOrDefaultAsync(c => c.UserName == userName);
 
-            if (password != usuario.Password)
+            if (!BCrypt.Net.BCrypt.Verify(password, usuario.Password))
                 return "Contraseña incorrecta";
 
             return CreateToken(usuario);
         }
 
-        public async Task<bool> Register(Usuario usuario)
+        public async Task<bool> Register(string userName, string password)
         {
+            string passwordHash = BCrypt.Net.BCrypt.HashPassword(password);
+
+            Usuario usuario = new Usuario
+            {
+                UserName = userName,
+                Password = passwordHash
+            };
+
             await _context.Usuarios.AddAsync(usuario);
             int valor = await _context.SaveChangesAsync();
             bool result = valor > 0 ? true : false;

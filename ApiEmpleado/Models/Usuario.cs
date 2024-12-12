@@ -13,7 +13,7 @@ namespace ApiEmpleado.Models
         [MaxLength(50)]
         public string UserName { get; set; } = null!;
 
-        [MaxLength(50)]
+        [MaxLength(100)]
         public string Password { get; set; } = null!;
     }
 }

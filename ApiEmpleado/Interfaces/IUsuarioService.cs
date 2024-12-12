@@ -4,7 +4,7 @@ namespace ApiEmpleado.Interfaces
 {
     public interface IUsuarioService
     {
-        Task<bool> Register(Usuario usuario);
+        Task<bool> Register(string userName, string password);
         Task<string> Login(string userName, string password);
     }
 }

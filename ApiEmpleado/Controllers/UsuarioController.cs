@@ -23,13 +23,7 @@ namespace ApiEmpleado.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var usuario = new Usuario
-            {
-                UserName = usuarioDto.UserName,
-                Password = usuarioDto.Password
-            };
-
-            return Ok(await _usuarioService.Register(usuario));
+            return Ok(await _usuarioService.Register(usuarioDto.UserName, usuarioDto.Password));
         }
 
         [HttpPost("Login")]
