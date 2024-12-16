@@ -31,12 +31,17 @@ namespace ApiEmpleado.Repository
         }
         public async Task<Empleado> GetEmpleadoById(int empleadoId)
         {
-            return await _context.Empleados.FirstOrDefaultAsync(c => c.Id == empleadoId);
+            return await _context.Empleados.FindAsync(empleadoId);
         }
 
         public async Task<ICollection<Empleado>> GetEmpleados()
         {
             return await _context.Empleados.ToListAsync();
+        }
+
+        public async Task<Departamento> GetDepartamentoFromEmpleado(int empleadoId)
+        {
+            return await _context.Empleados.Where(e => e.Id == empleadoId).Select(c => c.Departamento).FirstOrDefaultAsync();
         }
 
         public async Task<bool> Save()

@@ -49,10 +49,10 @@ namespace ApiEmpleado.Services
 
         public async Task<string> Login(string userName, string password)
         {
-            if(await _context.Usuarios.AnyAsync(c => c.UserName == userName) == false)
-                return "El usuario no se encuentra registrado";
+            var usuario = await _context.Usuarios.SingleOrDefaultAsync(c => c.UserName == userName);
 
-            var usuario = await _context.Usuarios.FirstOrDefaultAsync(c => c.UserName == userName);
+            if (usuario == null)
+                return "El usuario no se encuentra registrado";
 
             if (!BCrypt.Net.BCrypt.Verify(password, usuario.Password))
                 return "Contraseña incorrecta";
@@ -74,6 +74,12 @@ namespace ApiEmpleado.Services
             int valor = await _context.SaveChangesAsync();
             bool result = valor > 0 ? true : false;
             return result;
+        }
+
+        public async Task<bool> UsuarioExist(string username)
+        {
+            return await _context.Usuarios.AnyAsync(u => u.UserName.ToLower() == username.ToLower());    
+
         }
     }
 }

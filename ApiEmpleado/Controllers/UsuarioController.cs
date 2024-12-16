@@ -23,6 +23,9 @@ namespace ApiEmpleado.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
+            if (await _usuarioService.UsuarioExist(usuarioDto.UserName))
+                return BadRequest("Ya existe un usuario registrado con ese nombre de usuario.");
+
             return Ok(await _usuarioService.Register(usuarioDto.UserName, usuarioDto.Password));
         }
 

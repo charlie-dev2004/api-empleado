@@ -10,6 +10,7 @@ namespace ApiEmpleado.Interfaces
         Task<bool> UpdateEmpleado(Empleado empleado);
         Task<bool> DeleteEmpleado(Empleado empleado);
         Task<bool> EmpleadoExist(int empleadoId);
+        Task<Departamento> GetDepartamentoFromEmpleado(int empleadoId);
         Task<bool> Save();
     }
 }

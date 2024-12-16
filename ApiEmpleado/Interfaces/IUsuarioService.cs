@@ -6,5 +6,6 @@ namespace ApiEmpleado.Interfaces
     {
         Task<bool> Register(string userName, string password);
         Task<string> Login(string userName, string password);
+        Task<bool> UsuarioExist(string userName);
     }
 }
